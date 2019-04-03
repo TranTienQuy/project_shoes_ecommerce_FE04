@@ -5,6 +5,7 @@ import Menu from './Menu';
 import Slide from './Slide';
 import Footer from './Footer';
 import Cart from './Cart';
+import Details from './Details';
 
 class Home extends Component {
 	render() {
@@ -16,6 +17,7 @@ class Home extends Component {
 					<Switch>
 						<Route exact path="/" component={Slide} />
 						<Route path="/gio-hang" component={Cart} />
+						<Route path="/chi-tiet" component={Details} />
 					</Switch>
 					<Footer/>
 				</React.Fragment>
