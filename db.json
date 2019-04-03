@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Air Max",
+      "img": "images/products/nike-air-max-night-ops-pack.jpg",
+      "price": "$120",
+      "company": "Nike",
+      "info": "Tuyệt vời cho đôi chân của bạn"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Mercury",
+      "img": "images/products/Adidas-Mercury-Pack-Euro-Copa-America-2016-1.jpg",
+      "price": "$120",
+      "company": "Adidas",
+      "info": "Bạn sẽ là Messi thứ n+"
+    },
+    {
+      "id": 3,
+      "name": "Adidas Mercury",
+      "img": "images/products/adidas-1.jpg",
+      "price": "$120",
+      "company": "Adidas",
+      "info": "Hãy để đôi chân đưa bạn đến mọi nơi"
+    }
+  ]
+}
