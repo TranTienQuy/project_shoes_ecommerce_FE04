@@ -1,0 +1,34 @@
+.footer {
+	max-width: 100%;
+}
+ul {
+	list-style: none;
+	display: block;
+}
+li {
+	display: list-item;
+	display: block;
+}
+.social-links {
+	overflow: hidden;
+}
+.social-links li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 5px;
+    -webkit-transition: background-color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+}
+.social-links li.fb a {
+	background: url(images/fb-brand.png) no-repeat center #355599;
+}
+.social-links li.twt a {
+	background: url(images/twt-brand.png) no-repeat center #0fccf4;
+}
+.social-links li.gplus a {
+	background: url(images/gplus-brand.png) no-repeat center #e0133a;
+}
