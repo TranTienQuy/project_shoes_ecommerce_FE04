@@ -23,7 +23,7 @@ class Details extends Component {
                                 <button className="btp-btn">Tiếp tục mua hàng</button>
                                 <button className="cart-btn" >Thêm vào giỏ hàng</button>
                             </Link>
-                    </div>
+                   		</div>
                     </div>
                 </div>
             </div>
