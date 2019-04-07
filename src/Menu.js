@@ -19,15 +19,8 @@ class Menu extends Component {
 							<li className="nav-item">
 							    <a className="nav-link" href="#">GIỚI THIỆU</a>
 							</li>
-							<li className="nav-item dropdown">
-							    <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-								    role="button" aria-haspopup="true" aria-expanded="false">SẢN PHẨM
-							    </a>
-							    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a className="dropdown-item" href="#">GIÀY ADIDAS</a>
-									<a className="dropdown-item" href="#">GIÀY NIKE</a>
-									<a className="dropdown-item" href="#">PHỤ KIỆN</a>	
-							    </div>
+							<li className="nav-item">
+							    <Link className="nav-link" to="/list">SẢN PHẨM</Link>
 							</li>
 							<li className="nav-item dropdown">
 							    <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
