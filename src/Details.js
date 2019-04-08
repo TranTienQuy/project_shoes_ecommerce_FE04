@@ -5,7 +5,7 @@ class Details extends Component {
     render() {
         return(
             <div className="container py-5">
-                <div className="row">
+            	<div className="row">
                     <div className="col-10 mx-auto text-center text-slanted my-5">
                         <h1>Tên sản phẩm</h1>
                     </div>
