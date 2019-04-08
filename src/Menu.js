@@ -20,7 +20,7 @@ class Menu extends Component {
 							    <a className="nav-link" href="#">GIỚI THIỆU</a>
 							</li>
 							<li className="nav-item">
-							    <Link className="nav-link" to="/list">SẢN PHẨM</Link>
+							    <Link className="nav-link" to="/san-pham">SẢN PHẨM</Link>
 							</li>
 							<li className="nav-item dropdown">
 							    <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
@@ -36,7 +36,7 @@ class Menu extends Component {
 							</li>
 							<li className="nav-item">
 							    <Link className="nav-link" to="/gio-hang">
-							    <img src={cart} alt="cart" height="20" width="25"/>
+							    <img src={cart} alt="cart" height="25" width="25"/>
 							    </Link>
 							</li>
 						</ul>

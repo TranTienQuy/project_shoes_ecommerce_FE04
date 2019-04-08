@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductList.css';
 import Axios from 'axios';
+import {Link} from 'react-router-dom';
 
 class ProductList extends Component {
 	constructor(props) {
@@ -25,9 +26,11 @@ class ProductList extends Component {
 			products.map(product => {
 				return (
 					<div className="item col-xs-4 col-lg-4" key={product.id}>
-						<img src={product.img}/>
+						<Link to="/chi-tiet">
+							<img src={product.img}/>
+						</Link>
 						<h4>Price:{product.price}</h4>
-	    				<button className="btn btn-primary">Add to cart</button>
+	    				<button className="btn btn-outline-primary">Add to cart</button>
 					</div>
 				)
 			})
@@ -35,7 +38,7 @@ class ProductList extends Component {
 			<div className="center"></div>
 		)
     return (
-    	<div>
+    	<div className="container py-5">
     		<h2>Sản Phẩm</h2>
     		<div className="container">
     			<div className="row">
