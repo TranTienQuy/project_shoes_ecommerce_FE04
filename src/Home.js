@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Switch,Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import Menu from './Menu';
 import Slide from './Slide';

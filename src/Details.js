@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
 class Details extends Component {
+    
     render() {
         return(
             <div className="container py-5">
@@ -20,10 +21,10 @@ class Details extends Component {
                         <h3>Thông tin về sản phẩm:</h3><p className="text-muted">Info</p>
                         <div>
                             <Link to="/san-pham">
-                                <button className="btn btn-outline-warning">Tiếp tục mua hàng</button>
+                                <button className="btn btn-outline-success">Tiếp tục mua hàng</button>
                             </Link>
-                            <button className="btn btn-outline-primary">Thêm vào giỏ hàng</button>
-                    </div>
+                            <button className="btn btn-outline-primary mx-3">Thêm vào giỏ hàng</button>
+                        </div>
                     </div>
                 </div>
             </div>

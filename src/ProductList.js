@@ -25,12 +25,21 @@ class ProductList extends Component {
 		const productList = products.length ? (
 			products.map(product => {
 				return (
-					<div className="item col-xs-4 col-lg-4" key={product.id}>
-						<Link to="/chi-tiet">
-							<img src={product.img}/>
-						</Link>
-						<h4>Price:{product.price}</h4>
-	    				<button className="btn btn-outline-primary">Add to cart</button>
+					<div className="col-9 mx-auto col-md-6 col-lg-3 my-3" key={product.id}>
+						<div className="card">
+							<div className="img-container p-5">
+								<Link to="/chi-tiet">
+									<img className="card-img-top" src={ require(`./${product.img}`)}/>
+								</Link>
+								<button className="cart-btn">
+									<i className="fas fa-cart-plus" />
+								</button>
+							</div>
+						</div>
+						<div className="card-footer d-flex justify-content-between">
+							<p className="align-self-center mb-0">{product.name}</p>
+							<h5 className="text-blue font-italic mb-0">Giá:{product.price}</h5>
+						</div>
 					</div>
 				)
 			})
@@ -39,7 +48,7 @@ class ProductList extends Component {
 		)
     return (
     	<div className="container py-5">
-    		<h2>Sản Phẩm</h2>
+    		<h2 className="text-center">SẢN PHẨM</h2>
     		<div className="container">
     			<div className="row">
     				{productList}

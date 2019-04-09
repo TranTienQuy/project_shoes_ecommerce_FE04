@@ -2,24 +2,64 @@
   "products": [
     {
       "id": 1,
-      "name": "Nike Air Max",
-      "img": "images/products/nike-air-max-night-ops-pack.jpg",
+      "name": "Nike Phantom Venom",
+      "img": "images/products/product-1.png",
       "price": "$120",
       "company": "Nike",
       "info": "Tuyệt vời cho đôi chân của bạn"
     },
     {
       "id": 2,
-      "name": "Adidas Mercury",
-      "img": "images/products/Adidas-Mercury-Pack-Euro-Copa-America-2016-1.jpg",
+      "name": "Adidas X",
+      "img": "images/products/product-2.png",
       "price": "$130",
       "company": "Adidas",
       "info": "Bạn sẽ là Messi thứ n+"
     },
     {
       "id": 3,
-      "name": "Adidas Mercury",
-      "img": "images/products/adidas-1.jpg",
+      "name": "Nike Phantom Vision",
+      "img": "images/products/product-3.png",
+      "price": "$150",
+      "company": "Nike",
+      "info": "Hãy để đôi chân đưa bạn đến mọi nơi"
+    },
+    {
+      "id": 4,
+      "name": "Adidas Nemeziz",
+      "img": "images/products/product-4.png",
+      "price": "$150",
+      "company": "Adidas",
+      "info": "Hãy để đôi chân đưa bạn đến mọi nơi"
+    },
+    {
+      "id": 5,
+      "name": "Nike Mercurial Vapor",
+      "img": "images/products/product-5.png",
+      "price": "$150",
+      "company": "Nike",
+      "info": "Hãy để đôi chân đưa bạn đến mọi nơi"
+    },
+    {
+      "id": 6,
+      "name": "Adidas Predator",
+      "img": "images/products/product-6.png",
+      "price": "$150",
+      "company": "Adidas",
+      "info": "Hãy để đôi chân đưa bạn đến mọi nơi"
+    },
+    {
+      "id": 7,
+      "name": "Nike Tiempo Legend",
+      "img": "images/products/product-7.png",
+      "price": "$150",
+      "company": "Nike",
+      "info": "Hãy để đôi chân đưa bạn đến mọi nơi"
+    },
+    {
+      "id": 8,
+      "name": "Adidas Copa",
+      "img": "images/products/product-8.png",
       "price": "$150",
       "company": "Adidas",
       "info": "Hãy để đôi chân đưa bạn đến mọi nơi"
