@@ -64,5 +64,15 @@
       "company": "Adidas",
       "info": "Hãy để đôi chân đưa bạn đến mọi nơi"
     }
+  ],
+  "productDetails": [
+    {
+      "id": 1,
+      "name": "Nike Phantom Venom",
+      "img": "images/products/product-1.png",
+      "price": "$120",
+      "company": "Nike",
+      "info": "Tuyệt vời cho đôi chân của bạn"
+    }
   ]
 }
