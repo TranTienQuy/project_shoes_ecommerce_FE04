@@ -36,7 +36,7 @@ class Menu extends Component {
 							</li>
 							<li className="nav-item">
 							    <Link className="nav-link" to="/gio-hang">
-							    <img src={cart} alt="cart" height="20" width="20"/>
+							    <img src={cart} alt="cart" height="20" width="20" />
 							    </Link>
 							</li>
 						</ul>

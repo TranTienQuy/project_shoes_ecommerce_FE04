@@ -19,7 +19,7 @@ class Home extends Component {
 					<Switch>
 						<Route exact path="/" component={Slide} />
 						<Route path="/gio-hang" component={Cart} />
-						<Route path="/chi-tiet" component={Details} />
+						<Route path="/chi-tiet/:id" component={Details} />
 						<Route path="/san-pham" component={ProductList}/>
 					</Switch>
 					<Footer/>

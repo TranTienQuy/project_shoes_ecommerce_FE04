@@ -9,7 +9,7 @@ class ProductList extends Component {
 		super(props);
 		this.state = {
 			products: [],
-		}
+		};
 	}
 
 	componentDidMount(){
@@ -18,26 +18,19 @@ class ProductList extends Component {
 			console.log(response.data);
 			this.setState({products: response.data.slice(0,10)});
 		});
-	}
-
-	handleDetail () {
-		console.log('handle detail');
-	}
+	};
 
 	render() {
 		const {products} = this.state;
 		const productList = products.length ? (
 			products.map(product => {
 				return (
-					<div className="col-9 mx-auto col-md-6 col-lg-3 my-3" key={product.id}>
+					<div className="col-9 mx-auto col-md-6 col-lg-3 my-3">
 						<div className="card">
-							<div className="img-container p-5" >
-								<Link to="/chi-tiet">
+							<div className="img-container p-5"  >
+								<Link to={ `/chi-tiet/${product.id}`}>
 									<img className="card-img-top" src={ require(`./${product.img}`)}/>
 								</Link>
-								<button className="cart-btn">
-									<i className="fas fa-cart-plus" />
-								</button>
 							</div>
 						</div>
 						<div className="card-footer d-flex justify-content-between">
@@ -52,7 +45,6 @@ class ProductList extends Component {
 		)
     return (
     	<div className="container py-3">
-    		<h2 className="text-center">SẢN PHẨM</h2>
     		<div className="container">
     			<div className="row">
     				{productList}
