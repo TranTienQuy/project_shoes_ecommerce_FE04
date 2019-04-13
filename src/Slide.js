@@ -20,22 +20,19 @@ class Slide extends Component {
 					      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
 					    </ol>
 					    <div className="carousel-inner">
-					      <div className="carousel-item active">
-					        <img src={adidas} className="d-block w-100" alt="..."/>
-					        <div className="carousel-caption d-none d-md-block">
-					          <h5>GIÀY ADIDAS</h5>
-					        </div>
+								<div className="carousel-item">
+					        <img src={accessories} className="d-block w-100" alt="..."/>
 					      </div>
-					      <div className="carousel-item">
+								<div className="carousel-item">
 					        <img src={nike} className="d-block w-100" alt="..."/>
 					        <div className="carousel-caption d-none d-md-block">
 					          <h5>GIÀY NIKE</h5>
 					        </div>
 					      </div>
-					      <div className="carousel-item">
-					        <img src={accessories} className="d-block w-100" alt="..."/>
+					      <div className="carousel-item active">
+					        <img src={adidas} className="d-block w-100" alt="..."/>
 					        <div className="carousel-caption d-none d-md-block">
-					          <h5>PHỤ KIỆN</h5>
+					          <h5>GIÀY ADIDAS</h5>
 					        </div>
 					      </div>
 					    </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Cart.css';
 
 class CartItem extends Component {
     render() {
@@ -8,10 +9,10 @@ class CartItem extends Component {
                     {/* <img src={img} className="img-fluid" alt="product" height="50" width="50" /> */}
                 </div>
                 <div className="col-10 mx-auto col-lg-2">
-                    <span className="d-lg-none">sản phẩm : </span> tên sản phẩm
+                    <span className="d-lg-none">sản phẩm : </span>
                 </div>
                 <div className="col-10 mx-auto col-lg-2">
-                    <span className="d-lg-none">giá : </span> đơn giá
+                    <span className="d-lg-none">giá : </span>
                 </div>
                 <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
                     <div className="d-flex justify-content-center">
