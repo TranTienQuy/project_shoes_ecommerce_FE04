@@ -1,22 +1,35 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import $ from "jquery";
 import CartColumns from './CartColumns';
+import EmptyCart from './EmptyCart';
+import {ProductConsumer} from '../context';
 import CartList from './CartList';
 import CartTotals from './CartTotals';
+import './Cart.css';
 
 class Cart extends Component {
     render() {
         return(
-            <div>
-	            <div className="container py-5">
-	                <CartColumns />
-                    <CartList />
-                    <CartTotals />
-	            </div>
-            </div>
-        );
+            <section>
+                <ProductConsumer>
+                    {value => {
+                        const {cart} = value;
+                        if (cart.length > 0) {
+                            return (
+                                <div className="container mt-3">
+                                    <h4 className="text-capitalize font-weight text-center">GIỎ HÀNG</h4>
+                                    <CartColumns />
+                                    <CartList value={value} />
+                                    <CartTotals value={value} />
+                                </div>
+                            );
+                        }
+                        else {
+                            return <EmptyCart />;
+                        }
+                    }}
+                </ProductConsumer>
+            </section>
+        )
     }
 }
 

@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Axios from 'axios';
+import {ProductConsumer} from './context';
 
 class Details extends Component {
     constructor(props) {
-		super(props);
+        super(props);
+        const id = this.props.match.params.id;
+        const inCart = this.props.match.params.inCart;
 		this.state = {
+            id,
+            inCart,
             product: {},
 		}
 	}
@@ -19,36 +24,42 @@ class Details extends Component {
     }
     
     render() {
-        const {product} = this.state;
+        const {product,id,inCart} = this.state;
 		const productDetail =  Object.keys(product).length ? (
-            <div className="container">
-                <div className="row">
-                    <div className="col-10 mx-auto text-center text-slanted my-5">
-                        <h2>{product.name}</h2>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                        <img src={require(`./${product.img}`)} className="img-fluid" alt="product" /> 
-                    </div>
-                    <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                        <h3>Hãng: {product.company}</h3>
-                        <h3 className="font-weight-bold">Giá: {product.price}</h3>
-                        <h3>Thông tin về sản phẩm:</h3><p className="text-muted">{product.info}</p>
-                        <div>
-                            <Link to="/san-pham">
-                                <button className="btn btn-outline-success">Tiếp tục mua hàng</button>
-                            </Link>
-                            <button className="btn btn-outline-primary mx-3">Thêm vào giỏ hàng</button>
+            <ProductConsumer>
+                {value => {
+                    return (<div className="container">
+                        <div className="row">
+                            <div className="col-10 mx-auto text-center text-slanted my-5">
+                                <h2>{product.name}</h2>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <div className="row">
+                            <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
+                                <img src={require(`./${product.img}`)} className="img-fluid" alt="product" /> 
+                            </div>
+                            <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
+                                <h3>Hãng: {product.company}</h3>
+                                <h3>Giá: ${product.price}</h3>
+                                <h3>Thông tin về sản phẩm:</h3><p>{product.info}</p>
+                                <div>
+                                    <Link to="/san-pham">
+                                        <button className="btn btn-outline-primary text-uppercase">tiếp tục mua sắm</button>
+                                    </Link>
+                                    <button className="btn btn-outline-primary text-uppercase mx-3" disabled={inCart?true:false} onClick={() =>{value.addToCart(Number(id));}}>
+                                        {inCart ? 'đi tới giỏ hàng' : 'thêm vào giỏ hàng'}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>)
+                }}
+            </ProductConsumer>
         ) : (
 			<div className="center"></div>
         )
         return (
-            <div className="container py-3">
+            <div className="container">
                 <div className="container">
                     <div className="row">
                         {productDetail}
