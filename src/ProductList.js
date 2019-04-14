@@ -35,7 +35,7 @@ class ProductList extends Component {
 						</div>
 						<div className="card-footer d-flex justify-content-between">
 							<p className="align-self-center mb-0">{product.name}</p>
-							<h5 className="text-blue font-italic mb-0">{product.price}</h5>
+							<h5 className="text-blue font-italic mb-0">${product.price}</h5>
 						</div>
 					</div>
 				)

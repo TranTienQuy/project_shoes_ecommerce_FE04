@@ -22,7 +22,7 @@ class Header extends Component {
 						<p className="float-right">Chào mừng, nếu bạn có tài khoản làm ơn 
 						<a href="#" data-toggle="modal" data-target="#exampleModal"> đăng nhập</a>, 
 						hoặc <a href="#"> đăng ký </a> nếu chưa có tài khoản </p>
-						<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" 
+						<div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" 
 						aria-labelledby="exampleModalLabel" 
 						aria-hidden="true">
 						  <div className="modal-dialog" role="document">

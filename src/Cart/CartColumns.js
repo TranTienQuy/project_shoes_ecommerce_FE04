@@ -21,7 +21,7 @@ class CartColumns extends Component {
                         <p className="text-uppercase">xoá</p>
                     </div>
                     <div className="col-10 mx-auto col-lg-2">
-                        <p className="text-uppercase">tổng tiền</p>
+                        <p className="text-uppercase">tổng</p>
                     </div>
                 </div>
             </div>
