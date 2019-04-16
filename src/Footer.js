@@ -13,7 +13,7 @@ class Footer extends Component {
 			<div className="footer">
 				<div className="navbar navbar-expand-lg navbar-light bg-light">
 					<div className="container">
-					<p><a href="#">Football Boots</a> Template <span>|</span> copyright &copy; 2019</p>
+					<p><a href="#">DSLR Camera</a> Template <span>|</span> copyright &copy; 2019</p>
 					<ul className="social-links">
 						<li className="fb float-left"><a href="#"></a></li>
 						<li className="twt float-left"><a href="#"></a></li>

@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
 import './Slide.css';
-import adidas from './images/adidas.jpg';
-import nike from './images/nike.jpg';
-import accessories from './images/accessories.jpg';
+import main from './images/main.jpg';
+import canon from './images/canon.png';
+import nikon from './images/nikon.png';
 
 class Slide extends Component {
 	render() {
@@ -21,19 +21,13 @@ class Slide extends Component {
 					    </ol>
 					    <div className="carousel-inner">
 								<div className="carousel-item">
-					        <img src={accessories} className="d-block w-100" alt="..."/>
+					        <img src={canon} className="d-block w-100" alt="..."/>
 					      </div>
 								<div className="carousel-item">
-					        <img src={nike} className="d-block w-100" alt="..."/>
-					        <div className="carousel-caption d-none d-md-block">
-					          <h5>GIÀY NIKE</h5>
-					        </div>
+					        <img src={nikon} className="d-block w-100" alt="..."/>
 					      </div>
 					      <div className="carousel-item active">
-					        <img src={adidas} className="d-block w-100" alt="..."/>
-					        <div className="carousel-caption d-none d-md-block">
-					          <h5>GIÀY ADIDAS</h5>
-					        </div>
+					        <img src={main} className="d-block w-100" alt="..."/>
 					      </div>
 					    </div>
 					    <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">

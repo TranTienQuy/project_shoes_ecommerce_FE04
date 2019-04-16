@@ -27,8 +27,8 @@ class Menu extends Component {
 								    role="button" aria-haspopup="true" aria-expanded="false">HƯỚNG DẪN
 							    </a>
 							    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-									<a className="dropdown-item" href="#">CHỌN SIZE GIÀY</a>
-									<a className="dropdown-item" href="#">THANH TOÁN</a>	
+									<a className="dropdown-item" href="#">ĐẶT HÀNG</a>
+									<a className="dropdown-item" href="#">THANH TOÁN</a>
 							    </div>
 							</li>
 							<li className="nav-item">
