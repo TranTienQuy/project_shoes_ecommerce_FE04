@@ -7,16 +7,14 @@ class Details extends Component {
     constructor(props) {
         super(props);
         const id = this.props.match.params.id;
-        const inCart = this.props.match.params.inCart;
 		this.state = {
             id,
-            inCart,
             product: {},
 		}
 	}
 
 	componentDidMount(){
-		Axios.get(`http://localhost:3000/products/${this.props.match.params.id}`)
+        Axios.get(`http://localhost:3000/products/${this.props.match.params.id}`)
 		.then(response => {
 			console.log(response.data);
 			this.setState({product: response.data});
@@ -24,7 +22,7 @@ class Details extends Component {
     }
     
     render() {
-        const {product,id,inCart} = this.state;
+        const {product,id} = this.state;
 		const productDetail =  Object.keys(product).length ? (
             <ProductConsumer>
                 {value => {
@@ -41,13 +39,14 @@ class Details extends Component {
                             <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                                 <h3>Hãng: {product.company}</h3>
                                 <h3>Giá: ${product.price}</h3>
-                                <h3>Thông tin về sản phẩm:</h3><p>{product.info}</p>
+                                <h3>Thông tin sản phẩm:</h3><p>{product.info}</p>
                                 <div>
                                     <Link to="/san-pham">
                                         <button className="btn btn-outline-primary text-uppercase">tiếp tục mua sắm</button>
                                     </Link>
-                                    <button className="btn btn-outline-primary text-uppercase mx-3" disabled={inCart?true:false} onClick={() =>{value.addToCart(Number(id));}}>
-                                        {inCart ? 'đi tới giỏ hàng' : 'thêm vào giỏ hàng'}
+                                    <button className="btn btn-outline-primary text-uppercase mx-3" disabled={product.inCart?true:false} onClick={() => {
+                                        value.addToCart(Number(id)); product.inCart = true;}}>
+                                        {product.inCart ? 'đã thêm vào giỏ hàng' : 'thêm vào giỏ hàng'}
                                     </button>
                                 </div>
                             </div>

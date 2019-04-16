@@ -54,7 +54,7 @@ class Header extends Component {
 				</div>
 				<div className="main_header container">
 					<Link to="/">
-						<img id="logo" src={logo} height="50" width="50" />
+						<img id="logo" src={logo} height="100" width="100" />
 					</Link>
 					<div className="form-inline float-right">
 						<input type="text" className="form-control" name="search" id="search" placeholder="Tìm kiếm..."/>
