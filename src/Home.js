@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Cart from './Cart/Cart';
 import Details from './Details';
 import ProductList from './ProductList';
+import Register from './FrmRegister';
 
 class Home extends Component {
 	render() {
@@ -21,6 +22,7 @@ class Home extends Component {
 						<Route path="/gio-hang" component={Cart} />
 						<Route path="/chi-tiet/:id" component={Details} />
 						<Route path="/san-pham" component={ProductList}/>
+						<Route path="/dang-ky" component={Register}/>
 					</Switch>
 					<Footer/>
 				</React.Fragment>

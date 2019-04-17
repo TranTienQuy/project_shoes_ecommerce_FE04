@@ -21,7 +21,7 @@ class Header extends Component {
 						<p>Mọi thông tin xin liên hệ về email: <a href="#">question@gmail.com</a> </p>
 						<p className="float-right">Chào mừng, nếu bạn có tài khoản làm ơn 
 						<a href="#" data-toggle="modal" data-target="#exampleModal"> đăng nhập</a>, 
-						hoặc <a href="#"> đăng ký </a> nếu chưa có tài khoản </p>
+						hoặc <Link to="/dang-ky"> đăng ký </Link> nếu chưa có tài khoản </p>
 						<div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" 
 						aria-labelledby="exampleModalLabel" 
 						aria-hidden="true">
@@ -36,7 +36,7 @@ class Header extends Component {
 						      <div className="modal-body">
 						     	<div>
 							      	<p>Tài khoản:</p>
-							      	<input type="text" id="frmLogin" placeholder="Mời bạn nhập id..."/>
+							      	<input type="text" id="frmLogin" placeholder="Mời bạn nhập user name..."/>
 							    </div>
 							    <div>
 							      	<p>Mật khẩu:</p>
@@ -44,7 +44,7 @@ class Header extends Component {
 							    </div>
 						      </div>
 						      <div className="modal-footer">
-						        <button type="button" className="btn btn-secondary" data-dismiss="modal">Nhập lại</button>
+						        <button type="button" className="btn btn-secondary">Nhập lại</button>
 						        <button type="button" className="btn btn-primary">Đăng nhập</button>
 						      </div>
 						    </div>
