@@ -88,5 +88,15 @@
       "count": 0,
       "total": 0
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Tran",
+      "lastname": "Van An",
+      "username": "vanan12345",
+      "email": "vanan@gmail.com",
+      "password": "vanan12345"
+    }
   ]
 }
